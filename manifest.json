@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Exporter",
+  "version": "1.0",
+  "description": "Adds a button to export ChatGPT responses to Word documents.",
+  "permissions": ["activeTab", "scripting", "storage", "downloads"],
+  "content_scripts": [
+    {
+      "matches": ["*://chatgpt.com/*"],
+      "js": ["content.js", "libs/index.js"]
+    }
+  ]
+}
